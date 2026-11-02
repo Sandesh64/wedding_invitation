@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#57070d">
+  <meta name="description" content="You're invited to celebrate the wedding of Priya and Subhash on 26 November 2026 and their reception on 29 November 2026.">
+  <title>Priya &amp; Subhash | Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="snowfall" id="snowfall"></div>
+  <!-- <div class="snowfall" id="snowfall" aria-hidden="true"></div> -->
+  <div class="ambient" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="monogram" href="#" aria-label="Back to beginning">P <span>&</span> S</a>
+    <button class="sound-toggle" id="musicToggle" type="button" aria-pressed="false" title="Toggle background music">
+      <span class="sound-icon">♫</span><span id="musicLabel">Music off</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="welcome" id="welcome" aria-label="Welcome">
+      <div class="welcome-frame">
+        <div class="ornament ornament-top">✦　✧　✦</div>
+        <p class="eyebrow">Together with their families</p>
+        <p class="script welcome-intro">joyfully invite you to celebrate</p>
+        <h1>Priya <span>&amp;</span> Subhash</h1>
+        <div class="gold-rule"><i></i></div>
+        <p class="date-line">26 <span>&</span> 29 November 2026</p>
+        <p class="welcome-note">A celebration of love, laughter<br>and a beautiful new beginning</p>
+        <button class="open-button" id="openInvitation" type="button">
+          <span>Open invitation</span><b>↗</b>
+        </button>
+             <div class="scroll-hint">A little celebration awaits <span>↓</span></div>
+      </div>
+ 
+    </section>
+
+    <section class="invitation hidden" id="invitation">
+      <div class="section-heading">
+        <p class="eyebrow">The celebration</p>
+        <h2>You're warmly invited</h2>
+        <p class="script">Two days, one beautiful beginning</p>
+      </div>
+
+      <div class="event-grid">
+        <article class="event-card">
+          <div class="event-number">01</div>
+          <p class="event-type">The wedding ceremony</p>
+          <h3>Wedding Muhurtham</h3>
+          <div class="event-date"><strong>26</strong><span>NOVEMBER<br>2026</span></div>
+          <div class="event-details">
+            <p><span class="detail-icon">◷</span> Thursday · 12:29 PM</p>
+            <p><span class="detail-icon">⌖</span> Karmika Bhavana<br><small>Yellapur, Uttara Kannada</small></p>
+          </div>
+          <div class="event-actions">
+            <a class="outline-button" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Karmika+Bhavana%2C+Yellapur%2C+Uttara+Kannada">View location ↗</a>
+            <!-- <button class="text-button" type="button" data-calendar="wedding">＋ Add to calendar</button> -->
+          </div>
+        </article>
+
+        <article class="event-card">
+          <div class="event-number">02</div>
+          <p class="event-type">The celebration continues</p>
+          <h3>Wedding Reception</h3>
+          <div class="event-date"><strong>29</strong><span>NOVEMBER<br>2026</span></div>
+          <div class="event-details">
+            <p><span class="detail-icon">◷</span> Sunday · 11:00 AM</p>
+            <p><span class="detail-icon">⌖</span> Sri Muneshwara Party Hall<br><small>Near Nandi Hills, Bangalore</small></p>
+          </div>
+          <div class="event-actions">
+            <a class="outline-button" target="_blank" rel="noopener" href="https://maps.app.goo.gl/TitLWH2jRKx9H5Dz5">View location ↗</a>
+            <!-- <button class="text-button" type="button" data-calendar="reception">＋ Add to calendar</button> -->
+          </div>
+        </article>
+      </div>
+
+      <section class="gallery-section">
+        <p class="eyebrow">The invitation</p>
+        <h2>A keepsake for you</h2>
+        <p class="gallery-intro">The original invitation, lovingly shared with you.</p>
+        <div class="page-stack">
+          <figure><img src="page-1.jpg" alt="Save the date — Priya and Subhash"></figure>
+          <figure><img src="page-2.jpg" alt="Wedding muhurtham details for 26 November 2026"></figure>
+          <figure><img src="page-3.jpg" alt="Reception details for 29 November 2026"></figure>
+        </div>
+      </section>
+
+      <section class="rsvp-section">
+        <div class="rsvp-card">
+          <p class="script">It would mean the world to us</p>
+          <!-- <h2>Will you join us?</h2> -->
+          <p>Your presence would be the greatest gift we could receive.</p>
+          <!-- <button class="gold-button" id="rsvpOpen" type="button">Kindly respond</button> -->
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-mark">P <span>&</span> S</div>
+    <p>With love, Priya &amp; Subhash</p>
+    <small>26 &amp; 29 November 2026</small>
+  </footer>
+
+  <!-- <dialog id="rsvpDialog" class="rsvp-dialog">
+    <form id="rsvpForm" method="dialog">
+      <button class="dialog-close" id="rsvpClose" type="button" aria-label="Close">×</button>
+      <p class="eyebrow">A little note</p>
+      <h2>Kindly respond</h2>
+      <label>Your name<input id="guestName" name="guestName" required maxlength="80" placeholder="Enter your name"></label>
+      <label>Will you be joining us?
+        <select id="attendance" name="attendance">
+          <option value="Joyfully accepts">Joyfully accepts</option>
+          <option value="Regretfully declines">Regretfully declines</option>
+        </select>
+      </label>
+      <label>Number of guests
+        <select id="guestCount" name="guestCount">
+          <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option>
+        </select>
+      </label>
+      <button class="gold-button full" type="submit">Send response</button>
+      <p class="form-note">This opens WhatsApp or your device's share menu with your response ready to send. No details are stored on this website.</p>
+    </form>
+  </dialog> -->
+
+  <audio id="backgroundMusic" src="music.mp3" loop preload="none"></audio>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
